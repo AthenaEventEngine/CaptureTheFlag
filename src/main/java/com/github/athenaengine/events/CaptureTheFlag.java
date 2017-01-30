@@ -98,7 +98,6 @@ public class CaptureTheFlag extends BaseEvent<CTFEventConfig> {
             if (hasFlag(ph)) return;
 
             TeamType flagTeam = _flagSpawn.get(npc.getObjectId());
-            if (flagTeam == null) System.out.println("Es nulllll");
             if (ph.getTeamType() != flagTeam) {
                 // Animation
                 ph.castSkill(ph, 1034, 1, 1, 1);
@@ -267,10 +266,6 @@ public class CaptureTheFlag extends BaseEvent<CTFEventConfig> {
     }
 
     private void updateTitle(Player ph) {
-        if (ph == null) System.out.println("El player es null");
-        if (ph.getTeam() == null) System.out.println("El team es null");
-        if (ph.getTeam().getName() == null) System.out.println("El team name es null");
-
         ph.setTitle("[ " + ph.getTeam().getName() + " ]");
     }
 }
