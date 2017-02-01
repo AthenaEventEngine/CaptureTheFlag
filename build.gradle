@@ -25,5 +25,5 @@ jar {
                 'Built-JDK': System.getProperty('java.version'),
                 'Main-Class': 'com.github.athenaengine.events.CaptureTheFlagContainer'
     }
-    archiveName = 'CaptureTheFlag.jar'
+    archiveName = 'CaptureTheFlag-' + version + '.jar'
 }
